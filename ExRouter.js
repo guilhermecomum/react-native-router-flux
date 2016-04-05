@@ -289,12 +289,14 @@ export default class ExRouter extends React.Component {
         const Footer = this.props.footer;
         const footer = Footer ? <Footer {...this.props} {...this.state}/> : null;
         debug("RENDER ROUTER:"+router.name);
+        Object.keys(router.routes).map(route => {
+            const oldProps = router.routes[route].props
+            router.routes[route].props = {...oldProps, ...parentProps(this.props)}
+        })
         return (
             <View style={styles.transparent}>
                 {header}
                 <ExNavigator ref="nav" initialRouteStack={router.stack.map(route => {
-                        const oldProps = router.routes[route].props
-                        router.routes[route].props = {...oldProps, ...parentProps(this.props)}
                         return new ExRouteAdapter(router.routes[route])
                     })}
                     style={styles.transparent}
