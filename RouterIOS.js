@@ -7,7 +7,7 @@
  *
  */
 
-import React from 'react-native';
+import React from 'react';
 import BaseRouter from './BaseRouter';
 import Route from './Route';
 import * as Components from './Common';

@@ -7,7 +7,7 @@
  *
  */
 
-import React from 'react-native'
+import React from 'react'
 import BaseRouter from './BaseRouter';
 import ExRouter from './ExRouter';
 const {StyleSheet, View} = React;

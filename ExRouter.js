@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from 'react';
 import BaseRouter from './BaseRouter';
 import Route from './Route';
 import * as Components from './Common';
@@ -103,7 +103,7 @@ export class ExRouteAdapter {
                   style={[ExNavigator.Styles.barLeftButtonText, this.route.props.leftButtonTextStyle]}>{this.route.props.leftTitle}</Text>
             </TouchableOpacity>);
         }
-        
+
         if (index === 0 || index < navigator.getCurrentRoutes().length-1) {
             return null;
         }

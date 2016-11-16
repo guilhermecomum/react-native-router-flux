@@ -1,4 +1,4 @@
-import React from 'react-native';
+import React from 'react';
 const {PixelRatio, Navigator, Dimensions} = React;
 import buildStyleInterpolator from 'react-native/Libraries/Utilities/buildStyleInterpolator';
 
