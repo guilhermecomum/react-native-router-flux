@@ -34,7 +34,7 @@
     }
   ],
   "dependencies": {
-    "@exponent/react-native-navigator": "0.4.8",
+    "@exponent/react-native-navigator": "0.6.0",
     "react-native-tabs": "^0.1.8"
   }
 }
